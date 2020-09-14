@@ -1,0 +1,8 @@
+parameter	value
+ra_col		'RA'
+dec_col		'DEC'
+min_sep_arcsec	1
+max_sep_arcsec	10800
+N_bins		20
+N_bs		1000
+
