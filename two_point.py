@@ -89,14 +89,14 @@ def main(data_file, config_file):
 ##main code
 
 ###parse command line arguments
-parser = argparse.ArgumentParser()
-parser.add_argument('data', type=str,
-                    help='list of positional data (e.g. catalogue file)')
-parser.add_argument('config', type=str,
-                    help='config file')
 
-args = parser.parse_args()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('data', type=str,
+                        help='list of positional data (e.g. catalogue file)')
+    parser.add_argument('config', type=str,
+                        help='config file')
+    args = parser.parse_args()
 
-
-main(data_file=args.data, config_file=args.config)
+    main(data_file=args.data, config_file=args.config)
 
